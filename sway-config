@@ -168,7 +168,7 @@ client.background $bg
 bar {
     position bottom
 
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+    status_command while printf "%s" "$(date +'%Y-%m-%d-%X')\ \|\ BAT\ $(cat /sys/class/power_supply/BAT0/capacity)%"; do sleep 1; done
 
     ##colors {
     ##    statusline #ffffff

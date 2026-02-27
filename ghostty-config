@@ -57,7 +57,7 @@ keybind = alt+j=goto_split:down
 keybind = alt+k=goto_split:up
 keybind = alt+l=goto_split:right
 
-keybind = alt+enter=new_split:right
-keybind = alt+shift+enter=new_split:down
+#keybind = alt+enter=new_split:right
+#keybind = alt+shift+enter=new_split:down
 keybind = alt+shift+q=close_surface
 keybind = alt+f=toggle_split_zoom
