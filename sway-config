@@ -145,7 +145,7 @@ set $border-hi #d4d4d4
 set $urgent    #ffffff
 
 # === Window colors ===
-client.focused          $border-hi $bg $fg $border-hi $border-hi
+client.focused          $border-hi $bg $fg $border-hi $border
 client.focused_inactive $border    $bg $fg-dim $border
 client.unfocused        $border    $bg $fg-dim $border
 client.urgent           $urgent    $bg $bg $urgent
