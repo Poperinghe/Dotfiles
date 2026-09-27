@@ -49,8 +49,8 @@
 (set-face-attribute 'default nil :height 150)
 (setq display-line-numbers-type 'relative)
 
-(use-package doom-themes
-  :config (load-theme 'doom-plain-dark))
+(use-package base16-theme
+  :config (load-theme 'base16-grayscale-dark))
 
 (use-package mood-line
   :config (mood-line-mode t))
