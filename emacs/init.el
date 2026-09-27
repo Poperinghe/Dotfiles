@@ -84,8 +84,10 @@
  "M-l"   'windmove-right)
 
 (general-def
-  :keymaps 'override :states '(normal) :prefix "SPC"
+  :keymaps 'override :states '(normal visual) :prefix "SPC"
+  "SPC"   'eval-region
   "l"     'display-line-numbers-mode
+  "k"     '(lambda () (interactive) (eval (read (thing-at-point 'line t))))
   "ff"    'find-file
   "fs"    'scratch-buffer
   "fi"    '(lambda () (interactive) (find-file (concat user-emacs-directory "init.el"))))
