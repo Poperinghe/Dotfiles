@@ -58,8 +58,6 @@
 (setq global-auto-revert-mode t)
 
 (use-package magit)
-(use-package vterm)
-(use-package vterm-toggle)
 
 ;; KEYBINDINGS
 (use-package general)
@@ -76,7 +74,7 @@
  "M-n"   '(lambda () (interactive)) ;; TODO multiple cursors
  
  "M-u"   'buffer-menu               ;; frequently used modes
- "M-i"   'vterm-toggle-cd
+ "M-i"   '(lambda () (interactive) (compile (read-string "$ ")))
  "M-o"   'dired-jump
  "M-p"   'magit
  
@@ -104,6 +102,4 @@
   (setq magit-display-buffer-function
 	'magit-display-buffer-same-window-except-diff-v1))
 
-
-(with-eval-after-load 'evil
-  (evil-set-initial-state 'vterm-mode 'emacs))
+(setq compilation-scroll-output t)
