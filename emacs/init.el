@@ -34,9 +34,7 @@
 (setq scroll-conservatively 101
       scroll-margin 1)
 
-(setq default-frame-alist
-      '((ns-transparent-titlebar . t)
-        (vertical-scroll-bars . nil)))
+(setq default-frame-alist '((vertical-scroll-bars . nil)))
 (setq frame-title-format "")
 
 (fringe-mode 5)
@@ -45,7 +43,6 @@
 (scroll-bar-mode -1)
 (setq-default truncate-lines t)
 (setq ring-bell-function 'ignore)
-(setq default-frame-alist '((ns-transparent-titlebar . t)))
 (set-face-attribute 'default nil :height 150)
 (setq display-line-numbers-type 'relative)
 
