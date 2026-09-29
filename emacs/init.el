@@ -103,3 +103,17 @@
 	'magit-display-buffer-same-window-except-diff-v1))
 
 (setq compilation-scroll-output t)
+
+(use-package vertico
+  :ensure t
+  :config (vertico-mode t)
+  (define-key vertico-map (kbd "C-j") 'vertico-next)
+  (define-key vertico-map (kbd "C-k") 'vertico-previous))
+
+(use-package orderless
+  :ensure t
+  :config (setq completion-styles '(orderless basic)))
+
+(use-package marginalia
+  :ensure t
+  :config (marginalia-mode t))
