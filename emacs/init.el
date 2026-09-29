@@ -1,7 +1,7 @@
 ;; -*- lexical-binding: t; -*-
 
 ;; SYSTEM
-(setq backup-directory-alist `(("." . "~/.emacs.d/autosaves")))
+(setq backup-directory-alist `(("." . (concat user-emacs-directory "autosaves"))))
 (setq custom-file (concat user-emacs-directory "custom.el"))
 (load-file custom-file)
 (setq gc-cons-threshold (* 500 1024 1024)) ; GC runs after 500 MB
